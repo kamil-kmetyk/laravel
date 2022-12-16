@@ -1,0 +1,46 @@
+label {
+  @apply text-sm;
+}
+
+select,
+input {
+  @apply rounded border border-solid p-1.5 text-sm bg-gray-800 hover:brightness-75 transition duration-300;
+  border-color: var(--color-gray);
+}
+input.input-white {
+  @apply bg-white;
+}
+
+select:disabled,
+input:disabled {
+  @apply bg-gray-500 hover:bg-gray-500 cursor-no-drop;
+}
+
+input[type="file"] {
+  @apply py-[.25em];
+}
+input[type='date'] {
+  @apply py-[.35em];
+}
+
+.switch-label {
+  @apply inline-flex relative items-center cursor-pointer;
+}
+.switch {
+  @apply w-11 h-6 bg-gray-200 rounded-full relative
+  peer-focus:outline-none peer-checked:after:translate-x-full peer-checked:after:border-white peer-checked:bg-red-600
+  after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5
+  after:transition-all;
+}
+
+.is-invalid label {
+  @apply text-rose-700;
+}
+.is-invalid select,
+.is-invalid input {
+  @apply border-red-200 bg-rose-800 text-red-300;
+}
+
+.form-error {
+  @apply text-xs font-bold mt-0.5 text-rose-700;
+}

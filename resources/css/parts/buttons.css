@@ -1,0 +1,30 @@
+.primary-button {
+  @apply
+  px-6 py-2.5
+  rounded shadow-md
+  text-white font-medium text-xs leading-tight uppercase
+  hover:shadow-lg
+  focus:shadow-lg focus:outline-none focus:ring-0
+  active:shadow-lg
+  transition duration-300;
+  background-color: var(--color-primary);
+}
+
+.primary-button:hover,
+.primary-button:focus,
+.primary-button:active {
+  background-color: var(--color-secondary);
+}
+
+.rect-button {
+  @apply bg-gray-800 transition duration-300 hover:bg-gray-600;
+}
+.rect-button span:first-child {
+  @apply text-5xl;
+}
+.rect-button span:last-child {
+  font-family: 'Montserrat', sans-serif !important;
+}
+.rect-button.is-disabled {
+  @apply bg-gray-600 hover:bg-gray-500 cursor-not-allowed;
+}
