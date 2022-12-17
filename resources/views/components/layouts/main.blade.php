@@ -11,7 +11,7 @@
 
   @vite(['resources/css/app.css'])
 
-  <title>Zeit</title>
+  <title>Laravel</title>
 </head>
 <body>
 {{ $slot }}
