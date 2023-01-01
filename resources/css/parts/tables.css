@@ -1,0 +1,11 @@
+.lv-table-wrapper table thead {
+  @apply bg-gray-200;
+}
+
+.lv-table-wrapper table tbody tr {
+  @apply bg-gray-50;
+}
+
+.lv-table-wrapper .badge-default {
+  @apply bg-gray-300;
+}
