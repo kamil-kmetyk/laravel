@@ -2,3 +2,54 @@ body {
   background-color: var(--color-dark);
   color: var(--color-light);
 }
+
+.app-logo {
+  width: 300px;
+}
+
+#app-navbar .app-logo {
+  width: 100px;
+}
+
+#app-navbar .nav-buttons li {
+  @apply px-1.5 hover:brightness-75 transition duration-300;
+}
+
+.dashboard-wrapper {
+  background-color: var(--color-light);
+  @apply container mx-auto p-4 rounded text-black;
+}
+
+.dashboard-group-first-row {
+  @apply flex flex-row justify-between;
+}
+.dashboard-actions {
+  @apply flex flex-row;
+}
+.dashboard-actions a {
+  @apply ml-1.5 flex items-center;
+}
+.dashboard-actions a span {
+  @apply mr-1.5;
+}
+
+.dashboard-group-header {
+  @apply flex flex-row items-center;
+}
+.dashboard-group-header span:first-child {
+  @apply text-4xl flex items-center;
+}
+.dashboard-group-header span:last-child {
+  @apply text-2xl font-thin ml-4;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.dashboard-card {
+  @apply bg-gray-300 py-2 flex flex-col justify-between rounded;
+}
+.dashboard-card.primary-card {
+  @apply bg-gray-800 text-white;
+}
+.dashboard-card.small-content div:last-child span {
+  @apply text-2xl md:text-4xl;
+}

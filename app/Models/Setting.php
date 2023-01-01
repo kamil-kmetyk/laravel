@@ -29,4 +29,13 @@ class Setting extends Model {
     return $setting->value;
   }
 
+  public static function validationRules(): array {
+    return [
+      [
+        static::REGISTRATION_ACTIVE => 'nullable|boolean',
+      ],
+      []
+    ];
+  }
+
 }

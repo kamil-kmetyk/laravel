@@ -14,11 +14,11 @@ class LoginRequest extends FormRequest
   }
 
   public function rules(): array {
-    return User::validationRules()[0];
+    return User::loginRules()[0];
   }
 
   public function messages(): array {
-    return User::validationRules()[1];
+    return User::loginRules()[1];
   }
 
   public function authenticate(): void {

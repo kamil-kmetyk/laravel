@@ -42,7 +42,7 @@ class AuthController extends Controller {
       return redirect()->route('login');
     }
 
-    $validation = User::validationRules();
+    $validation = User::registrationRules();
     $data = $request->validate($validation[0], $validation[1]);
 
     $user = User::create([ 'email' => $data['email'], 'password' => Hash::make($data['password']) ]);
