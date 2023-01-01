@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0" />
 
   @vite(['resources/css/app.css'])
+  @laravelViewsStyles
 
   <title>Laravel</title>
 </head>
@@ -17,5 +18,6 @@
 {{ $slot }}
 
 @vite(['resources/js/app.js'])
+@laravelViewsScripts
 </body>
 </html>
