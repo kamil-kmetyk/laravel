@@ -3,6 +3,8 @@
 @import 'tailwindcss/utilities';
 @import 'tailwindcss/screens';
 
+@import '/node_modules/quill/dist/quill.bubble.css';
+
 @import 'parts/colors.css';
 @import 'parts/fonts.css';
 @import 'parts/appearance.css';
